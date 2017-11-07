@@ -6,13 +6,14 @@ read_dir = base_dir+r"test\\"
 
 def enter_dir(curr_filepath):
     print(curr_filepath)
-    for root, dirs, files in os.walk(curr_filepath, topdown=False):
+    for root, dirs, files in os.walk(curr_filepath, topdown=True):
       for filename in files:
         filepath = os.path.join(root,filename)
         print(filepath)
         b,ext = os.path.splitext(filepath)
         print(ext)
         #print(b)
+
 
         ind = filepath.find('.')
         print(ind)
@@ -26,20 +27,19 @@ def enter_dir(curr_filepath):
             return
     return
 
-def show_menu():
-        i=10
-        while i<1:
-            print("Hey Please choose your the type of file you wish to read:")
-            print("1: .plt")
-            print("2: .txt")
-            print("0 to exit")
+def defin_header():
+    return (r"Latitude,Longitude,dele_colum,Altitude,dele_colum,Date,Time\n")
 
-            try:
-                i = int(input("Enter a numerical value for the given choices"))
-            except:
-                print("Thats not a valid input")
-                print("Try Again!!!")
+#delete first 6 lines and a header
+def del_start_lines(filename):
+    f = open(filename)
+    lines = f.readlines()
+    f.seek(0,0)
 
+    f = open(filename, 'w')
+    f.write(defin_header())
+    f.write('\n')
+    f.writelines(lines[6:])
+    f.close()
 
-show_menu()
 enter_dir(read_dir)
