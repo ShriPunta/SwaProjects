@@ -1,8 +1,7 @@
 import os
 
-base_dir = r'C:\Users\shrip\Pictures\url_downloads\\'
+base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\\'
 
-read_dir = base_dir+r"test\\"
 
 def enter_dir(curr_filepath):
     print(curr_filepath)
@@ -13,22 +12,20 @@ def enter_dir(curr_filepath):
         b,ext = os.path.splitext(filepath)
         print(ext)
         #print(b)
-
+        del_start_lines(filepath)
 
         ind = filepath.find('.')
         print(ind)
         if ext == ".plt":
             os.rename(filepath,filepath[0:ind]+".txt")
             print('-----------')
-            return
         elif ext == ".txt":
             os.rename(filepath, filepath[0:ind] + ".csv")
             print('-#####-')
-            return
     return
 
 def defin_header():
-    return (r"Latitude,Longitude,dele_colum,Altitude,dele_colum,Date,Time\n")
+    return (r"Latitude,Longitude,dele_colum,Altitude,dele_colum,Date,Time")
 
 #delete first 6 lines and a header
 def del_start_lines(filename):
@@ -42,4 +39,4 @@ def del_start_lines(filename):
     f.writelines(lines[6:])
     f.close()
 
-enter_dir(read_dir)
+enter_dir(base_dir)
