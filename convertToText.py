@@ -1,4 +1,5 @@
 import os
+import random
 
 base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\\'
 
@@ -13,14 +14,14 @@ def enter_dir(curr_filepath):
         print(ext)
         #print(b)
         del_start_lines(filepath)
-
+        rand_name = str(random.randrange(0,99999))
         ind = filepath.find('.')
         print(ind)
         if ext == ".plt":
-            os.rename(filepath,filepath[0:ind]+".txt")
+            os.rename(filepath,filepath[0:ind]+rand_name+".txt")
             print('-----------')
         elif ext == ".txt":
-            os.rename(filepath, filepath[0:ind] + ".csv")
+            os.rename(filepath, filepath[0:ind]+rand_name+ ".csv")
             print('-#####-')
     return
 
