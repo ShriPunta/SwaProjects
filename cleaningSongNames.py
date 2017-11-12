@@ -4,7 +4,7 @@ import random
 import math
 from collections import Counter
 
-base_dir_r = r'C:\Users\shrip\Pictures\url_downloads\SwaTest\\'
+base_dir_r = r'C:\Users\shrip\Pictures\url_downloads\SwaTest\Test Centre\\'
 base_dir_w = r'C:\Users\shrip\Pictures\url_downloads\SwaTest\\'
 
 all_regexes = ["([\(\[]).*?([\)\]])","(\s?www.(.*?).com)|(\s?www.(.*?).pk)","(\s?([A-Z]*[a-z]*[0-9]*))\.com|((\s?([A-Z]*[a-z]*[0-9]*))\.pk)"]
@@ -54,11 +54,11 @@ def clean_names(song_names_dict):
                                             #to clear songs.pk godo.pk without www
                                             #clean_incomplete_sitenames(only_name_index)
 
-    #For starting and ending trimming
-    trim_data(only_name_index)
-
     #To avoid collision for duplicate names
     find_duplicates_in_name(only_name_index)
+
+    # For starting and ending trimming
+    trim_data(only_name_index)
 
     #Write to notepad for better use
     writ_to_file(only_name_index)
@@ -114,7 +114,7 @@ def trim_data(map_for_use):
 
         if ite[0] == ' ' or ite[0] == '\.':
             #print('cooler',k)
-            ite = ite[2:].lstrip().rstrip()
+            ite = ite[2:]
 
 def apply_all_filters(map_for_use):
 
@@ -177,8 +177,15 @@ def find_duplicates_in_name(map_to_use):
        only_name_index[k] = only_name_index[k].title()
 
 def renam_the_files(map_to_use):
-    for ke,val in map_to_use.items():
-        
+    for ke,val in index_pathname.items():
+        path,fname = os.path.split(val)
+        name,ext = os.path.splitext(fname)
+        #print(path,'| |',fname,'| |',name,'| |',ext)
+        joined_name = only_name_index[ke].lstrip().rstrip() + ext
+        print(os.path.join(path,joined_name))
+        index_pathname[ke] = os.path.join(path,joined_name)
+        os.rename(val,index_pathname[ke])
+
 
 
 
