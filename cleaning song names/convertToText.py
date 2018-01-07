@@ -1,7 +1,7 @@
 import os
 import random
 
-base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\\'
+base_dir = '''ReadingFilePath'''
 
 
 def enter_dir(curr_filepath):

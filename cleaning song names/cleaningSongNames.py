@@ -3,11 +3,11 @@ import re
 import random
 import math
 from collections import Counter
+import eyed3
 
-base_dir_r = r'C:\Users\shrip\Pictures\url_downloads\SwaTest\Test Centre\\'
-base_dir_w = r'C:\Users\shrip\Pictures\url_downloads\SwaTest\\'
-
-all_regexes = ["([\(\[]).*?([\)\]])","(\s?www.(.*?).com)|(\s?www.(.*?).pk)","(\s?([A-Z]*[a-z]*[0-9]*))\.com|((\s?([A-Z]*[a-z]*[0-9]*))\.pk)"]
+base_dir_r = '''ReadingFilePath'''
+base_dir_w = '''WritingFilePath'''
+all_regexes = ["([\(\[]).*?([\)\]])","(\s?www.(.*?).com)|(\s?www.(.*?).pk)","(\s?([A-Z]*[a-z]*[0-9]*))\.com|((\s?([A-Z]*[a-z]*[0-9]*))\.pk)|(\s?([A-Z]*[a-z]*[0-9]*))\.se"]
 
 #Global map to store the dirty name as key and the clean name as value
 
@@ -72,7 +72,7 @@ def clean_spaces_and_number(song_names_dict):
         #Remove numbers
         v = v.lower().translate({ord(c): None for c in '0123456789'})
         #Replace '_' with spaces
-        v = v.translate({ord(c): 32 for c in '_%@-=$#&^*'})
+        v = v.translate({ord(c): 32 for c in '_%@-=$#&^*+'})
         #Replace www and .com
         #replace multiple whitespaces with one space
         z =' '.join(v.split())
@@ -184,7 +184,10 @@ def renam_the_files(map_to_use):
         joined_name = only_name_index[ke].lstrip().rstrip() + ext
         print(os.path.join(path,joined_name))
         index_pathname[ke] = os.path.join(path,joined_name)
-        os.rename(val,index_pathname[ke])
+        try:
+            os.rename(val,index_pathname[ke])
+        except:
+            continue
 
 
 
