@@ -8,16 +8,15 @@ class ConnectToLocalDb:
     wiki_collection = None
     last_inserted_recIds = None
 
-    def __init__(self,hostName='localhost',port=27017):
-       self.client = MongoClient(hostName,port)
-       return self.client
+    def __init__(self,hostname='localhost',port=27017):
+       self.client = MongoClient(hostname,port)
+       self.db = self.client.local
+       self.wiki_collection = self.db.WikiCelebGraph
 
-    def getDB(self,dbName):
-        self.db = self.client.local
+    def getDB(self):
         return self.db
 
-    def getCollection(self,collectionName):
-        self.wiki_collection = self.db.WikiCelebGraph
+    def getCollection(self):
         return self.wiki_collection
 
     def insertManyWiki(self,dataToInsertMap):
