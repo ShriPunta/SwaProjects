@@ -14,6 +14,7 @@ test_rec = [{"name" : "Test1",
             "gender" : "M",
             "age" : 10,
             }]
+
 #rec_id = wiki_collection.insert_many(test_rec)
 #print(rec_id)
 #print(type(test_rec))
@@ -42,5 +43,11 @@ for ele in o:
 
 
 
-from bs4 import BeautifulSoup
-for a in soup.find_all('a', href=True):
+import csv
+mydict = {"a":"1","b":"2","c":"3","d":"4",}
+
+filePathToWrite = r"C:\Users\shrip\Pictures\url_downloads\crawler download"
+with open((filePathToWrite+'\\Traversed.csv'), 'w',newline='') as csv_file:
+    writer = csv.writer(csv_file)
+    for key, value in mydict.items():
+        writer.writerow([str(key), str(value)])

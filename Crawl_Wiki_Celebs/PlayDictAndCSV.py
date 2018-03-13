@@ -1,15 +1,28 @@
 import csv
 
-class CreateDictFromCSV:
+class PlayDictAndCSV:
     filePathToRead = ''
     header = []
     pathToHeaderFile = ''
+    mapToCSVMap = ''
     listOfMaps = list(dict())
     def __init__(self,pathToRead,inputPathToHeaderFile):
         print("Entered")
         self.populateHeader(inputPathToHeaderFile)
         print(self.header)
         listOfMaps = self.readCSV(pathToRead)
+
+    def __init__(self,writeMapToCSVpath,mapToCSVMap):
+        print(writeMapToCSVpath)
+        self.mapToCSVMap = mapToCSVMap
+        self.writeMapToCSV(writeMapToCSVpath)
+
+    def writeMapToCSV(self,writeMapToCSVpath,mapToCSVMap):
+        filePathToWrite = r"C:\Users\shrip\Pictures\url_downloads\crawler download" if writeMapToCSVpath!=('' or None) else writeMapToCSVpath
+        with open((filePathToWrite + '\\Traversed.csv'), 'w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            for key, value in mapToCSVMap.items():
+                writer.writerow([str(key), str(value)])
 
     def populateHeader(self,pathToHeaderFile):
         fp = open(pathToHeaderFile, newline='')
