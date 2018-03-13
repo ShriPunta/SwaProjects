@@ -3,8 +3,10 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import random
+
 base_dir = r'C:\\Users\\shrip\Pictures\\url_downloads\\crawler download\\'
 url_to_crawl = "https://en.wikipedia.org/wiki/List_of_Bollywood_actresses/"
+seed_page = "https://en.wikipedia.org"  #Crawling the English Wikipedia
 
 def image_ret(url):
     rand_name= random.randrange(0,100)

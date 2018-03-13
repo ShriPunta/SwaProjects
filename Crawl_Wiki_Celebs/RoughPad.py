@@ -34,3 +34,13 @@ with open(r"C:\Users\shrip\Pictures\url_downloads\crawler download\headers.csv",
 
         for cell in line:
             print(line.index(cell))
+
+from urllib3.util import parse_url
+o = parse_url(r"http://www.cwi.nl:80/%7Eguido/Python.html")
+for ele in o:
+    print(ele)
+
+
+
+from bs4 import BeautifulSoup
+for a in soup.find_all('a', href=True):
