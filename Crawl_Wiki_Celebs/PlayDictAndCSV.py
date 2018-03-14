@@ -45,6 +45,3 @@ class PlayDictAndCSV:
                     tempDict[self.header[index]] = cell
                 self.listOfMaps.append(tempDict)
         return self.listOfMaps
-
-#cooro = CreateDictFromCSV(r"C:\Users\shrip\Pictures\url_downloads\crawler download\corro.csv",r"C:\Users\shrip\Pictures\url_downloads\crawler download\headers.csv")
-#print(cooro.listOfMaps)

@@ -5,19 +5,23 @@ from bs4 import BeautifulSoup
 
 base_url = r"https://en.wikipedia.org/wiki/"
 crawler_mapper_csv_path = r""
-url_to_crawl = r"https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+start_page = r"https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+
 
 class CrawlerClass:
+    all_links_found = set()
+    to_crawl = [start_page]
+
     if __name__ == '__main__':
         #Initialize the Mongo connect to WikiCeleb GRaph
         clie = Mong.MongoClient()
 
 
     def theCrawler(self,url_to_crawl):
-
-        all_links_found = set()
-
-
+        for k in range(0, 3):
+            i = 0  # Initiate Variable to count No. of Iterations
+            while i < 3:
+                urll = self.to_crawl.pop(0)
 
 
 
@@ -26,5 +30,5 @@ class CrawlerClass:
         soup = BeautifulSoup(source_code.text, "lxml")
         soup2 = soup.find("div", {"class": "plainlist"})
         for a in soup2.find_all('a', href=True):
-            print(a['href'])
+            self.all_links_found.add(a['href'])
 
