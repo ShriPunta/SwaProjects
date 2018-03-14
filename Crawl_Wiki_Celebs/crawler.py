@@ -2,33 +2,36 @@ import Crawl_Wiki_Celebs.mongoConnect as Mong
 import Crawl_Wiki_Celebs.PlayDictAndCSV as DictCreator
 import requests
 from bs4 import BeautifulSoup
+import time
 
 base_url = r"https://en.wikipedia.org/wiki/"
 crawler_mapper_csv_path = r""
-start_page = r"https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+start_page = r"https://en.wikipedia.org/wiki/Category:American_male_film_actors"
 
 
 class CrawlerClass:
-    all_links_found = set()
-    to_crawl = [start_page]
+    to_crawl = set()
+    crawled = set()
 
     if __name__ == '__main__':
         #Initialize the Mongo connect to WikiCeleb GRaph
         clie = Mong.MongoClient()
+        to_crawl.add(start_page)
+
 
 
     def theCrawler(self,url_to_crawl):
-        for k in range(0, 3):
-            i = 0  # Initiate Variable to count No. of Iterations
-            while i < 3:
-                urll = self.to_crawl.pop(0)
+        pass
+
+
 
 
 
     def getLinksToSpouses(self,subLink):
-        source_code = requests.get(url_to_crawl)
+        source_code = requests.get(base_url+subLink)
         soup = BeautifulSoup(source_code.text, "lxml")
         soup2 = soup.find("div", {"class": "plainlist"})
         for a in soup2.find_all('a', href=True):
-            self.all_links_found.add(a['href'])
+            self.to_crawl.add(a['href'])
+
 

@@ -51,3 +51,19 @@ with open((filePathToWrite+'\\Traversed.csv'), 'w',newline='') as csv_file:
     writer = csv.writer(csv_file)
     for key, value in mydict.items():
         writer.writerow([str(key), str(value)])
+
+
+import requests
+from bs4 import BeautifulSoup
+import time
+
+start_time= time.time()
+source_code = requests.get(r"https://en.wikipedia.org/wiki/Category:American_male_film_actors")
+soup = BeautifulSoup(source_code.text, "lxml")
+for ul in soup.findAll("div", {"class": "mw-category-group"}):
+    for li in ul.findAll('a'):
+        print(li['href'])
+print("---%s seconds --"%(time.time() - start_time))
+
+for a in soup2.find_all('a', href=True):
+    self.to_crawl.add(a['href'])
