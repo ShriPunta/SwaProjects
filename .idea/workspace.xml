@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e94eefbb-e559-419b-8125-ffe7b5f7861b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
+      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,12 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="mongoConnect.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mongoConnect.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="442">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -26,18 +30,18 @@
       <file leaf-file-name="RoughPad.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="367">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            <state relative-caret-position="873">
+              <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="11" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -48,8 +52,8 @@
       <file leaf-file-name="PlayDictAndCSV.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="46" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -76,13 +80,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/crawl_Wiki_Celebs.py" />
-        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
         <option value="$PROJECT_DIR$/download wiki fotos/downloadPhotos.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/CreateDictFromCSV.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/WikiEndpoint.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
       </list>
     </option>
   </component>
@@ -153,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crawler">
+  <component name="RunManager" selected="Python.mongoConnect">
     <configuration name="CreateDictFromCSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -226,18 +230,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="mongoConnect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawl_Wiki_Celebs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SwaProjects" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.crawl_Wiki_Celebs" />
       <item index="1" class="java.lang.String" itemvalue="Python.RoughPad" />
       <item index="2" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
       <item index="3" class="java.lang.String" itemvalue="Python.crawler" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mongoConnect" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.crawler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
-        <item index="2" class="java.lang.String" itemvalue="Python.RoughPad" />
-        <item index="3" class="java.lang.String" itemvalue="Python.crawl_Wiki_Celebs" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.mongoConnect" />
+        <item index="1" class="java.lang.String" itemvalue="Python.crawler" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
+        <item index="3" class="java.lang.String" itemvalue="Python.RoughPad" />
+        <item index="4" class="java.lang.String" itemvalue="Python.crawl_Wiki_Celebs" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +290,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32596686" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.319337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -292,7 +316,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -326,7 +352,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -334,7 +362,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -342,7 +372,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -436,34 +468,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="367">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="46" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="873">
+          <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="11" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

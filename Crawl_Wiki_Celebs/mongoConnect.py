@@ -1,29 +1,38 @@
 
 from pymongo import MongoClient
+import dns
 
-
-class ConnectToLocalDb:
+class ConnectToCloudDb:
     client = None
     db = None
-    wiki_collection = None
+    collec = None
     last_inserted_recIds = None
 
-    def __init__(self,hostname='localhost',port=27017):
-       self.client = MongoClient(hostname,port)
-       self.db = self.client.local
-       self.wiki_collection = self.db.WikiCelebGraph
+    def __init__(self,dbName):
+       #client = MongoClient("mongodb://shri_punta:Shridhar28@cluster0-shard-00-00-vpcnk.mongodb.net:27017,cluster0-shard-00-01-vpcnk.mongodb.net:27017,cluster0-shard-00-02-vpcnk.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin")
+       self.client = MongoClient("mongodb+srv://shri_punta:Shridhar28@cluster0-vpcnk.mongodb.net/test")
+       self.db = self.client[dbName]
 
-    def getDB(self):
+
+    def getDB(self,dbName):
+        self.db = self.client[dbName]
         return self.db
 
-    def getCollection(self):
-        return self.wiki_collection
+    def getCollection(self,dbName,collecName):
+        db = self.client[dbName]
+        self.collec = db[collecName]
+        return self.collec
 
     def insertManyWiki(self,dataToInsertMap):
-        self.last_inserted_recIds = self.wiki_collection.insert_many(dataToInsertMap)
+        self.last_inserted_recIds = self.collec.insert_many(dataToInsertMap)
         return self.last_inserted_recIds
 
 
+'''con = ConnectToCloudDb()
 
 
 
+db = con.getDB(dbName='SwaProject')
+collec = con.getCollection(dbName='SwaProject',collecName='WikiCelebGraph')
+rec_id = collec.insert_one({'x':55})
+print(rec_id)'''
