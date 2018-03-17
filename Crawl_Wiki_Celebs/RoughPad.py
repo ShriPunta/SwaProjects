@@ -60,10 +60,73 @@ import time
 start_time= time.time()
 source_code = requests.get(r"https://en.wikipedia.org/wiki/Category:American_male_film_actors")
 soup = BeautifulSoup(source_code.text, "lxml")
-for ul in soup.findAll("div", {"class": "mw-category-group"}):
+'''for ul in soup.findAll("div", {"class": "mw-category-group"}):
     for li in ul.findAll('a'):
-        print(li['href'])
+        print(li['href'])'''
+
+print("---%s seconds --"%(time.time() - start_time))
+
+for divs in soup.findAll('a',text="next page"):
+    print(divs['href'])
+
 print("---%s seconds --"%(time.time() - start_time))
 
 for a in soup2.find_all('a', href=True):
     self.to_crawl.add(a['href'])
+
+
+
+
+mylist = [4, 2, 8, 4, 9, 6, 7]
+N = 3
+cumsum, moving_aves = [0], []
+
+for i, x in enumerate(mylist, 1):
+    cumsum.append(cumsum[i-1] + x)
+    print("i = ",i," x= ",x)
+    if i>=N:
+        moving_ave = (cumsum[i] - cumsum[i-N])/N
+        print('Single ---> ',moving_ave)
+        moving_aves.append(moving_ave)
+print("All--> ",moving_aves)
+
+
+# Complete the function below.
+
+inputs = [1, 2, 100, 2, 2]
+allowedIncrease = 2.5
+windowSize = 2
+total_avg = sum(inputs) / len(inputs)
+threshold = int(allowedIncrease) * total_avg
+flag = 0
+N = int(windowSize)
+cumsum, all_aves = [0], []
+for i, x in enumerate(inputs, 1):
+    cumsum.append(cumsum[i - 1] + x)
+    print("i = ", i, " x= ", x)
+    if i >= N:
+        moving_ave = (cumsum[i] - cumsum[i - N]) / N
+        print('Single ---> ', moving_ave)
+        if moving_ave < threshold:
+            flag = 2
+
+        if len(all_aves)>0 and (moving_ave > ((all_aves[-1]) * int(allowedIncrease))):
+            flag = 1
+            print("True")
+            break
+
+        all_aves.append(moving_ave)
+print("All--> ", all_aves)
+if flag == 2:
+    print("False")
+
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(source_code.text, "lxml")
+for ul in soup.findAll("div", {"class": "mw-category-group"}):
+    print("Entered Ul")
+    for li in ul.findAll('a', href=True):
+        print(li['href'])
+        self.to_crawl_sublinks.add(li['href'])
+
+
