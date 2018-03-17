@@ -3,6 +3,7 @@ import Crawl_Wiki_Celebs.PlayDictAndCSV as DictCreator
 import requests
 from bs4 import BeautifulSoup
 import time
+import csv
 
 base_url = r"https://en.wikipedia.org"
 crawler_mapper_csv_path = r""
@@ -27,7 +28,7 @@ class CrawlerClass:
 
     def theCrawler(self,url_to_crawl):
         i=0
-        while(i<4):
+        while(i<1):
             print("Entered" ,i)
             #print("Crawling Links -->",self.to_crawl_sublinks)
             print("Next Pages -->",self.next_pages)
@@ -73,10 +74,23 @@ class CrawlerClass:
         for a in soup2.find_all('a', href=True):
             self.to_crawl_sublinks.add(a['href'])
 
+    def writeMapToCSV(self,collectionToWrite,writeCollecToCSVpath=r"C:\Users\shrip\Pictures\url_downloads\crawler download"):
+        tempDict = dict()
+        #print(type(collectionToWrite))
+        #print(isinstance(collectionToWrite,dict))
+        if not(isinstance(collectionToWrite,dict)):
+            if isinstance(collectionToWrite,set):
+                for item in collectionToWrite:
+                    tempDict[item] = False
+        #filePathToWrite = r"C:\Users\shrip\Pictures\url_downloads\crawler download" if writeMapToCSVpath!=('' or None) else writeMapToCSVpath
+        with open((writeCollecToCSVpath + '\\Traversed.csv'), 'w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            for key, value in tempDict.items():
+                writer.writerow([str(key), str(value)])
 
 testIntanst = CrawlerClass()
 testIntanst.next_pages.append(r"/wiki/Category:American_male_film_actors")
 testIntanst.theCrawler(base_url+testIntanst.next_pages[0])
-#print(testIntanst.to_crawl_sublinks)
-#print(testIntanst.next_pages)
-#print(testIntanst.crawled)
+print(len(testIntanst.to_crawl_sublinks))
+testIntanst.writeMapToCSV(collectionToWrite=testIntanst.to_crawl_sublinks)
+
