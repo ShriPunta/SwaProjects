@@ -8,11 +8,11 @@ class ConnectToCloudDb:
     collec = None
     last_inserted_recIds = None
 
-    def __init__(self,dbName):
+    def __init__(self,dbName,collecName):
        #client = MongoClient("mongodb://shri_punta:Shridhar28@cluster0-shard-00-00-vpcnk.mongodb.net:27017,cluster0-shard-00-01-vpcnk.mongodb.net:27017,cluster0-shard-00-02-vpcnk.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin")
        self.client = MongoClient("mongodb+srv://shri_punta:Shridhar28@cluster0-vpcnk.mongodb.net/test")
        self.db = self.client[dbName]
-
+       self.collec = self.db[collecName]
 
     def getDB(self,dbName):
         self.db = self.client[dbName]
@@ -24,8 +24,14 @@ class ConnectToCloudDb:
         return self.collec
 
     def insertManyWiki(self,dataToInsertMap):
-        self.last_inserted_recIds = self.collec.insert_many(dataToInsertMap)
+        self.last_inserted_recIds = self.collec.insert(dataToInsertMap,check_keys=False)
         return self.last_inserted_recIds
+
+    def deleteAll(self):
+
+        rec_id = self.collec.delete_many({})
+
+
 
 
 '''con = ConnectToCloudDb()

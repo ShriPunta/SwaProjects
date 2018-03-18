@@ -98,14 +98,12 @@ class CrawlerClass:
         tempList = list()
         for key,value in tempDict.items():
             tempDict2 = dict()
-            tempDict2[key] = value
+            workarnd = key.replace('.','??')
+            tempDict2[workarnd] = value
             tempList.append(tempDict2)
 
-        con = Mong.ConnectToCloudDb()
-        b = con.getDB(dbName='SwaProject')
-        collec = con.getCollection(dbName='SwaProject', collecName='WikiCelebGraph')
-        rec_id = collec.insert_one({'x': 55})
-
+        con = Mong.ConnectToCloudDb(dbName='SwaProject',collecName='WikiCelebGraph')
+        rec_ids = con.insertManyWiki(tempList)
 
 
 start_time = time.time()
@@ -113,5 +111,6 @@ testIntanst = CrawlerClass()
 testIntanst.next_pages.append(r"/wiki/Category:American_male_film_actors")
 testIntanst.theCrawler(base_url+testIntanst.next_pages[0])
 print(len(testIntanst.to_crawl_sublinks))
-testIntanst.writeMapToCSV(collectionToWrite=testIntanst.to_crawl_sublinks)
+#testIntanst.writeMapToCSV(collectionToWrite=testIntanst.to_crawl_sublinks)
+testIntanst.writeToMongoDB(testIntanst.to_crawl_sublinks)
 print("---%s seconds --"%(time.time() - start_time))
