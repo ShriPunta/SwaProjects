@@ -28,8 +28,10 @@ class ConnectToCloudDb:
         return self.last_inserted_recIds
 
     def deleteAll(self):
-
         rec_id = self.collec.delete_many({})
+
+    def getRecords(self):
+        pass
 
 
 

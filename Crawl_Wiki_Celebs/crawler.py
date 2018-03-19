@@ -14,6 +14,7 @@ class CrawlerClass:
     to_crawl_sublinks = set()
     crawled = set()
     next_pages = list()
+    con = None
 
     def __init__(self):
         pass
@@ -90,27 +91,29 @@ class CrawlerClass:
 
     def writeToMongoDB(self,collectionToWrite):
         tempDict = dict()
+        tempList = list()
+
         if not (isinstance(collectionToWrite, dict)):
             if isinstance(collectionToWrite, set):
                 for item in collectionToWrite:
-                    tempDict[item] = False
+                    tempDict['sublink'] = item
+                    tempDict['traversed'] = False
 
-        tempList = list()
-        for key,value in tempDict.items():
-            tempDict2 = dict()
-            workarnd = key.replace('.','??')
-            tempDict2[workarnd] = value
-            tempList.append(tempDict2)
 
-        con = Mong.ConnectToCloudDb(dbName='SwaProject',collecName='WikiCelebGraph')
-        rec_ids = con.insertManyWiki(tempList)
+        if self.con==None:
+            self.con = Mong.ConnectToCloudDb(dbName='SwaProject',collecName='WikiCelebGraph')
+        rec_ids = self.con.insertManyWiki(tempList)
 
 
 start_time = time.time()
-testIntanst = CrawlerClass()
-testIntanst.next_pages.append(r"/wiki/Category:American_male_film_actors")
-testIntanst.theCrawler(base_url+testIntanst.next_pages[0])
-print(len(testIntanst.to_crawl_sublinks))
-#testIntanst.writeMapToCSV(collectionToWrite=testIntanst.to_crawl_sublinks)
-testIntanst.writeToMongoDB(testIntanst.to_crawl_sublinks)
+#testIntanst = CrawlerClass()
+#testIntanst.next_pages.append(r"/wiki/Category:American_male_film_actors")
+#testIntanst.theCrawler(base_url+testIntanst.next_pages[0])
+#print(len(testIntanst.to_crawl_sublinks))
+##testIntanst.writeMapToCSV(collectionToWrite=testIntanst.to_crawl_sublinks)
+#testIntanst.writeToMongoDB(testIntanst.to_crawl_sublinks)
+#rec_id = testIntanst.con.deleteAll()
+plon=Mong.ConnectToCloudDb(dbName='SwaProject',collecName='WikiCelebGraph')
+for ele in plon.collec.find().limit(4):
+    print("Val ==> ",ele)
 print("---%s seconds --"%(time.time() - start_time))

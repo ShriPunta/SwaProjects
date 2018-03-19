@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e94eefbb-e559-419b-8125-ffe7b5f7861b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py" />
+      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" />
+      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py" />
       <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
       <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
     </list>
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="mongoConnect.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mongoConnect.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="260">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="e#1#32#0" expanded="true" />
               </folding>
@@ -31,8 +33,8 @@
       <file leaf-file-name="RoughPad.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1846">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
+            <state relative-caret-position="1913">
+              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,8 +43,8 @@
       <file leaf-file-name="crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2733">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="97" column="30" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="104" selection-end-column="51" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -53,18 +55,18 @@
       <file leaf-file-name="PlayDictAndCSV.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="312">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TheNode.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TheNode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>class</find>
+      <find>CLIENT_SECRET_FILE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,11 +97,12 @@
         <option value="$PROJECT_DIR$/download wiki fotos/downloadPhotos.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/CreateDictFromCSV.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/WikiEndpoint.py" />
-        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py" />
-        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" />
-        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
-        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/Google API quickstart.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py" />
+        <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
       </list>
     </option>
   </component>
@@ -110,7 +114,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -123,31 +127,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SwaProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwaProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwaProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwaProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Crawl_Wiki_Celebs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwaProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwaProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="download wiki fotos" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -188,6 +168,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Google API quickstart" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawl_Wiki_Celebs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SwaProjects" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawl_Wiki_Celebs/Google API quickstart.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="RoughPad" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,24 +199,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SwaProjects" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="crawl_Wiki_Celebs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SwaProjects" />
-      <option name="SCRIPT_NAME" value="C:\Users\shrip\Documents\Study Material\GIT Hub Repository\SwaProjects\Crawl_Wiki_Celebs\mongoConnect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,19 +241,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.crawl_Wiki_Celebs" />
-      <item index="1" class="java.lang.String" itemvalue="Python.RoughPad" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
-      <item index="3" class="java.lang.String" itemvalue="Python.crawler" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mongoConnect" />
+      <item index="0" class="java.lang.String" itemvalue="Python.RoughPad" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
+      <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mongoConnect" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Google API quickstart" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.crawler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mongoConnect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RoughPad" />
-        <item index="4" class="java.lang.String" itemvalue="Python.crawl_Wiki_Celebs" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Google API quickstart" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mongoConnect" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CreateDictFromCSV" />
+        <item index="4" class="java.lang.String" itemvalue="Python.RoughPad" />
       </list>
     </recent_temporary>
   </component>
@@ -324,6 +304,50 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1846">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2886">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -505,47 +529,71 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/WikiEndpoint.py" />
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1846">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
+        <state relative-caret-position="291">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/googleapiclient/discovery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="174" column="4" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/Google API quickstart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2733">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="1615">
+          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1913">
+          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/PlayDictAndCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="97" column="30" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="104" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

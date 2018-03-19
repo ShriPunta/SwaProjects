@@ -7,12 +7,16 @@ class PlayDictAndCSV:
     mapToCSVMap = ''
     listOfMaps = list(dict())
     def __init__(self,pathToRead,inputPathToHeaderFile):
+        pass
         print("Entered")
         self.populateHeader(inputPathToHeaderFile)
         print(self.header)
         listOfMaps = self.readCSV(pathToRead)
 
+
+
     def __init__(self,writeMapToCSVpath,mapToCSVMap):
+        pass
         print(writeMapToCSVpath)
         self.mapToCSVMap = mapToCSVMap
         self.writeMapToCSV(writeMapToCSVpath)

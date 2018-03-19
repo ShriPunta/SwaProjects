@@ -130,3 +130,8 @@ for ul in soup.findAll("div", {"class": "mw-category-group"}):
         self.to_crawl_sublinks.add(li['href'])
 
 
+
+
+
+
+
