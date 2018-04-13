@@ -71,10 +71,16 @@ for divs in soup.findAll('a',text="next page"):
 
 print("---%s seconds --"%(time.time() - start_time))
 
-for a in soup2.find_all('a', href=True):
-    self.to_crawl.add(a['href'])
-
-
+import requests
+from bs4 import BeautifulSoup
+to_crawl_sublinks = 'https://en.wikipedia.org/wiki/Robert_Downey_Jr.'
+import re
+source_code = requests.get(to_crawl_sublinks)
+soup = BeautifulSoup(source_code.text, "lxml")
+soup2 = soup.find_all('th',text='Spouse(s)')
+print(len(soup2))
+if soup2 != None:
+    print(soup2)
 
 
 mylist = [4, 2, 8, 4, 9, 6, 7]
