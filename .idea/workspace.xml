@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e94eefbb-e559-419b-8125-ffe7b5f7861b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataPlotting/UltimateCounter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataPlotting/deAnonymozing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPlotting/UltimateCounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPlotting/UltimateCounter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPlotting/deAnonymozing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPlotting/deAnonymozing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,23 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="deAnonymozing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="deAnonymozing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataPlotting/deAnonymozing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="-505">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UltimateCounter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UltimateCounter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataPlotting/UltimateCounter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="42">
+              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -74,8 +71,9 @@
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad2.py" />
         <option value="$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py" />
         <option value="$PROJECT_DIR$/ForProblemSolving/problem_1.py" />
-        <option value="$PROJECT_DIR$/DataPlotting/deAnonymozing.py" />
         <option value="$PROJECT_DIR$/DataPlotting/UltimateCounter.py" />
+        <option value="$PROJECT_DIR$/DataPlotting/ReadFileNames.py" />
+        <option value="$PROJECT_DIR$/DataPlotting/deAnonymozing.py" />
       </list>
     </option>
   </component>
@@ -255,10 +253,10 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13020833" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32689655" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32596686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -278,13 +276,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/TheNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2037">
@@ -586,16 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/RoughPad2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -630,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" lean-forward="true" selection-start-column="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleaning song names/cleaningSongNames.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -647,20 +621,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlotting/deAnonymozing.py">
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/mongoConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="651">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawl_Wiki_Celebs/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="146" column="52" lean-forward="true" selection-start-line="146" selection-end-line="146" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPlotting/ReadFileNames.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataPlotting/UltimateCounter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="42">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPlotting/deAnonymozing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
