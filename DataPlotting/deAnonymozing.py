@@ -7,6 +7,7 @@ import datetime
 
 base_dir = ''
 write_dir = ''
+get_attribs = []
 all_files_in_dir = []
 formatted_filenames = []
 globalCounta = coun.N_Counter
@@ -22,8 +23,8 @@ def fill_list_with_fileNames(pathName):
             else:
                 continue
 
-def fill_base_paths(variable_name,file_path):
-    global base_dir,write_dir
+def fill_variables(variable_name,file_path):
+    global base_dir,write_dir,get_attribs
     if variable_name == 'base_dir':
         file_point=open(file_path,'r')
         base_dir=str(file_point.readline()).strip()
@@ -32,28 +33,34 @@ def fill_base_paths(variable_name,file_path):
         file_point = open(file_path, 'r')
         write_dir = str(file_point.readline()).strip()
         file_point.close()
+    elif variable_name == 'get_attribs':
+        file_point = open(file_path, 'r')
+        content = str(file_point.readline()).strip()
+        get_attribs = content.split(',')
+        file_point.close()
 
 def start_anonymozing():
-    fill_base_paths('base_dir', root_var_dir+'base_dir.txt')
-    fill_base_paths('write_dir', root_var_dir+'dir_to_write.txt')
+    fill_variables('base_dir', root_var_dir+'base_dir.txt')
+    fill_variables('write_dir', root_var_dir+'dir_to_write.txt')
+    fill_variables('get_attribs', root_var_dir+'attributes.txt')
     fill_list_with_fileNames(base_dir)
     globalCounta.resetToOne()
     for each_file_name in all_files_in_dir:
         openAndCopyEachFile(each_file_name)
         break
 
+
     print(error_file_names)
 
 def openAndCopyEachFile(fileName):
+    global get_attribs
     globalCounta.getCurrentCount()
     name,ext = os.path.splitext(os.path.basename(fileName))
     dateToCompare = getTheDateToCompare(name)
     split_name = '_'.join(str(x) for x in fileName.split('_')[-2:])
-
-
-    getAttribs = ['ID', 'DOB', 'Country', 'Career','Gender', 'AdmitType']
+    
     try:
-        dataf = pd.read_csv(fileName, skipinitialspace=True, usecols=getAttribs)
+        dataf = pd.read_csv(fileName, skipinitialspace=True, usecols=get_attribs)
         new_columns = dataf.columns.values;
         new_columns[0] = 'UID';
         dataf.columns = new_columns
@@ -74,13 +81,13 @@ def openAndCopyEachFile(fileName):
 
             #print(str(date_read))
             calculated_age = dateToCompare - date_read
-            #print(round(calculated_age.days/365))
-            dataf.set_value(i, 'age', calculated_age)
+            age = (round(calculated_age.days/365))
+            dataf.set_value(i, 'age', age)
             #increase counter
             globalCounta.currentCount+=1
 
-        #dataf.to_csv(write_dir + split_name+ext, sep=',',index=False)
-        print(dataf.head())
+        dataf.to_csv(write_dir + split_name+ext, sep=',',index=False)
+        #print(dataf.head())
         globalCounta.setNewCount()
     except UnicodeDecodeError:
         error_file_names.append(split_name)
