@@ -24,11 +24,11 @@ def fill_list_with_fileNames(pathName):
 
 def fill_base_paths(variable_name,file_path):
     global base_dir,write_dir
-    if variable_name=='base_dir':
+    if variable_name == 'base_dir':
         file_point=open(file_path,'r')
         base_dir=str(file_point.readline()).strip()
         file_point.close()
-    elif variable_name=='write_dir':
+    elif variable_name == 'write_dir':
         file_point = open(file_path, 'r')
         write_dir = str(file_point.readline()).strip()
         file_point.close()
@@ -40,6 +40,7 @@ def start_anonymozing():
     globalCounta.resetToOne()
     for each_file_name in all_files_in_dir:
         openAndCopyEachFile(each_file_name)
+        break
 
     print(error_file_names)
 
@@ -61,7 +62,21 @@ def openAndCopyEachFile(fileName):
             #dataf.at[i,'UID'] = globalCounta.currentCount
 
             #age Calculate
+            nowIs = datetime.datetime.now()
+            date_read = datetime.datetime(int(nowIs.year),int(nowIs.month),int(nowIs.day),0,0,0)
 
+            if str(row['DOB']).find('-') != -1:
+                #print("Entered 1")
+                date_read = datetime.datetime.strptime(row['DOB'],'%m-%d-%Y')
+            elif str(row['DOB']).find('/') != -1:
+                #print("Entered 2")
+                date_read = datetime.datetime.strptime(row['DOB'],'%m/%d/%Y')
+
+            #print(str(date_read))
+            calculated_age = dateToCompare - date_read
+            #print(round(calculated_age.days/365))
+            dataf.set_value(i, 'age', calculated_age)
+            #increase counter
             globalCounta.currentCount+=1
 
         #dataf.to_csv(write_dir + split_name+ext, sep=',',index=False)
@@ -73,9 +88,9 @@ def openAndCopyEachFile(fileName):
 def getTheDateToCompare(fileName):
     flag=0
     try:
-        currYear = list(re.findall(r'\d{4}', fileName))[0]
+        currYear = int(list(re.findall(r'\d{4}', fileName))[0])
     except:
-        currYear = (datetime.datetime.now()).year
+        currYear = int((datetime.datetime.now()).year)
 
     if fileName.find('Spr') != '-1':
         flag = 1
@@ -85,7 +100,9 @@ def getTheDateToCompare(fileName):
         flag = 2
 
     monthAndDate = [int(x) for x in start_date_dict.get(flag).split(',')]
-    datetime.datetime(currYear, monthAndDate[0], monthAndDate[1], 0, 0, 0)
+    formulatedDT = datetime.datetime(currYear, monthAndDate[0], monthAndDate[1], 0, 0, 0)
+    print(str(formulatedDT))
+    return formulatedDT
 
 
 
