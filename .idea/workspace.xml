@@ -16,8 +16,8 @@
       <file leaf-file-name="deAnonymozing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataPlotting/deAnonymozing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+            <state relative-caret-position="509">
+              <caret line="120" column="134" selection-start-line="120" selection-start-column="134" selection-end-line="120" selection-end-column="134" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -252,12 +252,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13020833" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32689655" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32689655" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32596686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -654,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataPlotting/deAnonymozing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        <state relative-caret-position="509">
+          <caret line="120" column="134" selection-start-line="120" selection-start-column="134" selection-end-line="120" selection-end-column="134" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

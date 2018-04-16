@@ -47,7 +47,7 @@ def start_anonymozing():
     globalCounta.resetToOne()
     for each_file_name in all_files_in_dir:
         openAndCopyEachFile(each_file_name)
-        break
+
 
 
     print(error_file_names)
@@ -58,7 +58,7 @@ def openAndCopyEachFile(fileName):
     name,ext = os.path.splitext(os.path.basename(fileName))
     dateToCompare = getTheDateToCompare(name)
     split_name = '_'.join(str(x) for x in fileName.split('_')[-2:])
-    
+
     try:
         dataf = pd.read_csv(fileName, skipinitialspace=True, usecols=get_attribs)
         new_columns = dataf.columns.values;
@@ -111,9 +111,13 @@ def getTheDateToCompare(fileName):
     print(str(formulatedDT))
     return formulatedDT
 
+def combine_all_csv():
+    pass
 
 
 if __name__ == '__main__':
     start_time = time.time()
-    start_anonymozing()
+    #start_anonymozing()
+    #TODO implement this method https://stackoverflow.com/questions/45091398/pandas-combine-multiple-csvs-and-output-as-one-large-file
+    combine_all_csv()
     print("---%s seconds --"%(time.time() - start_time))
